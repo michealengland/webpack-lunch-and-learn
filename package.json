@@ -1,0 +1,26 @@
+{
+  "name": "webpack-lunch-and-learn",
+  "version": "1.0.0",
+  "description": "This is a simple webpack for educational purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "This is a test script."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michealengland/webpack-lunch-and-learn.git"
+  },
+  "author": "Mike England mike.england@webdevstudios.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michealengland/webpack-lunch-and-learn/issues"
+  },
+  "homepage": "https://github.com/michealengland/webpack-lunch-and-learn#readme",
+  "dependencies": {
+    "npm": "^6.9.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
