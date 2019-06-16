@@ -17,5 +17,7 @@ Run `npm install --save-dev webpack`.
 3. Next, we'll need to install webpack-cli which is required for version 4 and higher.
 Run `npm install --save-dev webpack-cli`.
 
-4. Lastly, in the terminal we can use the default test script to see if everything is working.
+4. In the terminal we can use the default test script to see if everything is working.
 Run `npm test`.
+
+5. Next we'll create some directories to plan out our build structure. This includes src, dist, and build.

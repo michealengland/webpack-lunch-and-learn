@@ -60,3 +60,5 @@ typings/
 # webpack default dist folder
 dist/
 
+# don't ignore our readme file.
+!dist/readme.md
