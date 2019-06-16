@@ -61,4 +61,4 @@ typings/
 dist/
 
 # don't ignore our readme file.
-dist/readme.md
+!dist/readme.md
