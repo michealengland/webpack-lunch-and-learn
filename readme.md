@@ -21,3 +21,10 @@ Run `npm install --save-dev webpack-cli`.
 Run `npm test`.
 
 5. Next we'll create some directories to plan out our build structure. This includes src, dist, and build.
+
+## Step 02, Configuration
+While it isn't required to use a webpack.config file, we're going to use one in this demo.
+
+1. Create a file in the root directory call webpack.config.js. Webpack will automatically look for this file. This file will tell webpack where to look for files and what to do with them. For this demo we'll be using the simple configuration that can be found here [https://webpack.js.org/concepts/configuration/][https://webpack.js.org/concepts/configuration/].
+
+2. Next we must update our scripts so that we can use 'npm run dev' and make webpack run our changes.

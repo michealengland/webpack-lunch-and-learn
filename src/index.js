@@ -1,0 +1,1 @@
+console.log( "Sayyyy whaaaa this is being imported into the browser." );

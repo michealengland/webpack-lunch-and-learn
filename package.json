@@ -4,7 +4,9 @@
   "description": "This is a simple webpack for educational purposes.",
   "main": "index.js",
   "scripts": {
-    "test": "This is a test script."
+    "test": "This is a test script.",
+    "webpack": "webpack",
+    "dev": "npm run webpack -- --env.mode development --watch"
   },
   "repository": {
     "type": "git",
