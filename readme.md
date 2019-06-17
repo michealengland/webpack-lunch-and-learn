@@ -25,6 +25,8 @@ Run `npm test`.
 ## Step 02, Configuration
 While it isn't required to use a webpack.config file, we're going to use one in this demo.
 
-1. Create a file in the root directory call webpack.config.js. Webpack will automatically look for this file. This file will tell webpack where to look for files and what to do with them. For this demo we'll be using the simple configuration that can be found here [https://webpack.js.org/concepts/configuration/][https://webpack.js.org/concepts/configuration/].
+1. Create a file in the root directory and save it as `webpack.config.js`. Webpack will automatically look for this file. This file will tell webpack where to look for files and what to do with them. For this demo we'll be using the simple configuration that can be found here [https://webpack.js.org/concepts/configuration/][https://webpack.js.org/concepts/configuration/].
 
-2. Next we must update our scripts so that we can use 'npm run dev' and make webpack run our changes.
+2. Next we'll setup scripts so that we can use 'npm run dev' and make webpack run our changes. Also, we must set the mode to development or production, for this example we'll use production. If you do not set a mode a warning error will be displayed.
+
+3. Finally we'll run `npm run dev` and webpack will generate our bundle.js file in the `dist` folder. This will also display a summary of the bundles created along with their size.
