@@ -1,6 +1,5 @@
 // Path is a basic node function.
 const path = require('path');
-const sass = require('node-sass');
 
 module.exports = {
   mode: 'development',
