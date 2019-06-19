@@ -45,3 +45,23 @@ For this example we will use Sass as a way to demo what a loader can do.
 4. Last we will create a directory called `sass` with an `index.scss` file. Then we will point our entry to the sass file by doing the following `entry: './src/sass/index.scss'`.
 
 5. We can verify that everything is working by creating some basic scss styling and then running `npm run dev`.
+
+## Step 04, Plugins
+In the last example our styles were outputted inline, which isn't ideal for production becuase our styles are dependent on JS. In this example we will take this a step further by adding `mini-css-extract-plugin` to output our styles to a css file.
+
+1. First we will run `npm install --save-dev mini-css-extract-plugin` to add `mini-css-extract-plugin to our dependency graph.
+
+2. Next, we need to include our plugin for use by adding `const MiniCssExtractPlugin = require('mini-css-extract-plugin');` to the top of our `webpack.config.js` file.
+
+3. Now we're ready to define a new instance of our plugin. Using the code below insert it after modules.
+    `plugins: [
+        new MiniCssExtractPlugin({
+            filename: "[name].css", // exports a file called style.css.
+        })
+    ],`
+
+4. Now, we will replace 'style-loader' with MiniCssExtractPlugin.loader.
+
+5. Last, we'll re-write our Sass loader to include a conditional that changes how our style.css file is exported. During prod it will be compressed, during dev, it will be expanded.
+
+Notes: I re-wrote to the module.exports so that we could pass in the env variable for our mode.
