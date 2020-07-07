@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/michealengland/webpack-lunch-and-learn#readme",
   "dependencies": {
-    "npm": "^6.9.0"
+    "npm": "^6.14.6"
   },
   "devDependencies": {
     "css-loader": "^3.0.0",
